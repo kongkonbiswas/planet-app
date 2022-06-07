@@ -20,7 +20,7 @@ export default function Home({ navigation}) {
         const { name, color } =item;
           return(
             <Pressable onPress={() => {
-              navigation.navigate('Details')
+              navigation.navigate('Details', { planet: item})
             }} style={styles.item}>
               <View style={{ flexDirection: "row", alignItems: 'center'}}>
               <View style={[styles.circle, {backgroundColor: color}]}></View>
