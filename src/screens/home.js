@@ -20,7 +20,7 @@ export default function Home() {
           return(
             <View style={styles.item}>
               <View style={[styles.circle, {backgroundColor: color}]}></View>
-              <Text style={styles.itemName}>{name}</Text>
+              <Text preset='h3' style={styles.itemName}>{name}</Text>
             </View>
           )
       }}
@@ -38,6 +38,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: spacing[4],
+  },
+  itemName: {
+    textTransform: 'capitalize'
   },
   circle: {
     height: 30,
