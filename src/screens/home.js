@@ -16,10 +16,11 @@ export default function Home() {
       data ={PLANET_LIST}
       keyExtractor= {(item) => item.name}
       renderItem={({ item }) => {
+        const { name, color } =item;
           return(
             <View style={styles.item}>
-              <View style={[styles.circle, {backgroundColor: item.color}]}></View>
-              <Text>{item.name}</Text>
+              <View style={[styles.circle, {backgroundColor: color}]}></View>
+              <Text style={styles.itemName}>{name}</Text>
             </View>
           )
       }}
@@ -35,7 +36,8 @@ const styles = StyleSheet.create({
   },
   item: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    padding: spacing[4],
   },
   circle: {
     height: 30,
