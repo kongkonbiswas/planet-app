@@ -6,6 +6,7 @@ import { colors } from '../theme/colors';
 import { PLANET_LIST } from '../data/planet-list';
 import { keyExtractor } from 'react-native/Libraries/Lists/VirtualizeUtils';
 import { spacing } from '../theme/spacing';
+import { AntDesign } from '@expo/vector-icons';
 
 export default function Home() {
   return (
@@ -19,11 +20,15 @@ export default function Home() {
         const { name, color } =item;
           return(
             <View style={styles.item}>
+              <View style={{ flexDirection: "row"}}>
               <View style={[styles.circle, {backgroundColor: color}]}></View>
-              <Text preset='h3' style={styles.itemName}>{name}</Text>
+              <Text preset='h4' style={styles.itemName}>{name}</Text>
+              </View>
+              <AntDesign name="right" size={18} color="white" />
             </View>
           )
       }}
+      ItemSeparatorComponent={() => <View style={styles.separator}></View>}
       ></FlatList>
     </SafeAreaView>
   );
@@ -38,9 +43,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: spacing[4],
+    justifyContent: 'space-between'
   },
   itemName: {
-    textTransform: 'capitalize'
+    textTransform: 'uppercase',
+    marginLeft: spacing[4],
   },
   circle: {
     height: 30,
@@ -49,5 +56,9 @@ const styles = StyleSheet.create({
   },
   list: {
     padding: spacing[5],
+  },
+  separator: {
+    borderBottomColor: colors.white,
+    borderWidth: 0.5,
   }
 });
