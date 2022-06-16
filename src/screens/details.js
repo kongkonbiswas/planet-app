@@ -8,7 +8,7 @@ import { EarthSvg, JupiterSvg, MarsSvg, MercurySvg, NeptuneSvg, SaturnSvg, Uranu
 
 export default function Details({navigation, route}) {
   const planet = route.params.planet;
-  const { name } = planet;
+  const { name, description } = planet;
   console.log("PLANET --> ", planet);
 
   const renderImage = (name) => {
@@ -39,6 +39,10 @@ export default function Details({navigation, route}) {
         <View style={styles.imageView}>
           {renderImage(name)}
         </View>
+        <View style= {styles.detailsView}>
+          <Text preset='h1' style={styles.name}>{name}</Text>
+          <Text style={styles.description}>{description}</Text>
+        </View>
       </ScrollView>
     </SafeAreaView>
   )
@@ -53,5 +57,19 @@ const styles = StyleSheet.create({
       padding: spacing[5],
       alignItems: 'center',
       justifyContent: 'center'
+    },
+    detailsView: {
+      marginTop: spacing[10],
+      marginHorizontal: spacing[6],
+      alignItems: 'center'
+    },
+    name: {
+      textTransform: "uppercase",
+      textAlign: 'center',
+    },
+    description: {
+      textAlign: 'center',
+      marginTop: spacing[5],
+      lineHeight: 21,
     }
   });
