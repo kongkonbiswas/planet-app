@@ -20,7 +20,7 @@ export default function Details({ route }) {
   const { name, description, rotationTime, revolutionTime, radius, avgTemp, wikiLink } = planet;
   console.log("PLANET --> ", planet);
 
-  const renderImage = (name) => {
+  const renderImage = () => {
     switch(name) {
       case 'mercury':
         return <MercurySvg></MercurySvg>;
@@ -50,7 +50,7 @@ export default function Details({ route }) {
       <PlanetHeader backBtn={true}></PlanetHeader>
       <ScrollView >
         <View style={styles.imageView}>
-          {renderImage(name)}
+          {renderImage()}
         </View>
         <View style= {styles.detailsView}>
           <Text preset='h1' style={styles.name}>{name}</Text>
