@@ -6,10 +6,3 @@ export default function Text({children, preset = "default", style}) {
     const textStyles = StyleSheet.compose(presets[preset], style)
   return (<RNText style={textStyles}>{children}</RNText>)
 }
-
-// const user = {
-//     name: "Jhon"
-// }
-
-// console.log(user.name)
-// console.log(user[name])
