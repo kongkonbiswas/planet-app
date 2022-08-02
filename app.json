@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "planet-app",
+    "name": "Planet-App",
     "slug": "planet-app",
+    "description": "Watch and understand the world with Planet Apps. View, analyze, and download daily imagery directly through your browser with Planet Explorer.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
