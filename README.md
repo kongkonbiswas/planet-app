@@ -1,6 +1,4 @@
 # planet-app
-# npm i --save react-native-svg
-# npm i --save --dev react-native-svg-transformer
 
 Have a look the live preview [Click here to Check Live App](exp://exp.host/@kongkonbiswas/planet-app?release-channel=default).
 
@@ -23,5 +21,9 @@ This is React native app. Here I use implement Expo CLI to complete this project
 
 6. Customized URL
 
+
+## Important command
+# npm i --save react-native-svg
+# npm i --save --dev react-native-svg-transformer
 
 ---Thank You---
