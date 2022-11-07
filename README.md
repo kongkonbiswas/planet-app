@@ -1,14 +1,13 @@
 # planet-app
 
-Have a look the live preview [Click here to Check Live App](exp://exp.host/@kongkonbiswas/planet-app?release-channel=default).
+Have a look the live preview [Click here to Check Live App](https://expo.dev/@kongkonbiswas/planet-app).
 
 [Linkedin](https://www.linkedin.com/in/kongkon-biswas-a2374314a/).
 
 [E-mail](kongkonbiswas3241@gmail.com).
 
 # Key Features
-This is React native app. Here I use implement Expo CLI to complete this project. Here I complete some important things that I learned from my react native and so on.
-
+This is React native app. Here I am using Expo CLI to complete this project. Here I use some essential things I learned from my react native.
 ## Features
 
 - HTML, CSS, Typescript and Javascript
