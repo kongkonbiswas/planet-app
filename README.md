@@ -38,6 +38,4 @@ If you have any feedback, please reach out to me at kongkonbiswas3241@gmail.com
 # npm i --save react-native-svg
 # npm i --save --dev react-native-svg-transformer -->
 
-
-
  ---Thank You---
